@@ -9,4 +9,10 @@ Feature: Ornikar testing API
       | AAA | 4000 | 25 |
     Then I delete employee id=822
 
-    #IF HTTP STATUS CODE IS 429 == Too many calls
+      #IF HTTP STATUS CODE IS 429 == Too many calls
+
+  Scenario: Alternative for Post API = https://jsonplaceholder.typicode.com/posts
+
+    When I add a post
+      | 2 | title1 | body1 |
+
